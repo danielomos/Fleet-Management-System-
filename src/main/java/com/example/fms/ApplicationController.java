@@ -2,12 +2,53 @@ package com.example.fms;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 public class ApplicationController {
-    @GetMapping("/index")
-    public String home(){
-        return "index";
+
+    @GetMapping("/index2")
+    public String goHome(){
+        return "index2";
     }
+
+    @GetMapping("/_layout")
+    public String hr(){
+        return "_layout";
+    }
+
+    @GetMapping("fleet")
+    public String fleet(){
+        return "/fleet/index";
+    }
+
+    @GetMapping("accounts")
+    public String accounts(){
+        return "/accounts/index";
+    }
+
+    @GetMapping("payroll")
+    public String payroll(){
+        return "/payroll/index";
+    }
+
+    @GetMapping("helpdesk")
+    public String helpdesk(){
+        return "/helpdesk/index";
+    }
+
+    @GetMapping("parameters")
+    public String parameters(){
+        return "/parameters/index";
+    }
+
+    @GetMapping("reports")
+    public String reports(){
+        return "/reports/index";
+    }
+
+    @GetMapping("security")
+    public String security(){
+        return "/security/index";
+    }
+
 }
