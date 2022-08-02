@@ -6,14 +6,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ApplicationController {
 
-    @GetMapping("/index2")
+    @GetMapping("/index")
     public String goHome(){
-        return "index2";
+        return "index";
     }
 
-    @GetMapping("/_layout")
+    @GetMapping("/hr")
     public String hr(){
-        return "_layout";
+        return "/hr/index";
     }
 
     @GetMapping("fleet")
